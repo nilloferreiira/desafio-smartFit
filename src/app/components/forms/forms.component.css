@@ -1,0 +1,129 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px;
+
+    border: 4px solid #dfdfdf;
+    border-radius: 10px;
+}
+
+.form-group .form-icon {
+    font-size: 14px;
+    color: var(--light-grey);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    gap: 8px;
+}
+
+.form-group h3 {
+    font-size: 24px;
+    color: var(--light-text);
+    font-weight: 300;
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+.form-group .radio-wrapper {
+    width: 100%;
+    padding: 8px 4px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--light-text);
+    border-top: 2px solid #dfdfdf;
+
+    gap: 5px;
+
+}
+
+
+.form-group .radio-wrapper:nth-last-child(3) {
+    border-bottom: 2px solid #dfdfdf;
+    margin-bottom: 32px;
+}
+
+.form-group .inputs-radio {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 10px;
+}
+
+.form-group .btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-group .btn-wrapper .btn {
+    font-size: 18px;
+    
+    border-radius: 4px;
+    border: none;
+    
+    color: var(--dark-grey);
+    font-weight: 700;
+    
+    padding: 12px;
+    width: 100%;
+    
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.form-group .btn-wrapper .btn-primary {
+    background-color: var(--yellow);
+}
+
+.form-group .btn-wrapper .btn-secondary {
+    border: 2px solid var(--light-text);
+    background-color: transparent;
+}
+
+.form-group .checkbox-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    margin: 32px auto;
+    
+    gap: 12px;
+
+}
+
+.form-group .checkbox-wrapper input[type="checkbox"] {
+    margin-right: 4px;
+}
+
+@media (min-width: 768px) {
+    .form-group .btn-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .form-group .btn-wrapper .btn {
+        width: 25%;
+    }
+
+
+    .form-group .checkbox-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

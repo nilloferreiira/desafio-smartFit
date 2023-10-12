@@ -1,0 +1,48 @@
+ header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    min-width: 100vw;
+
+    gap: 32px;
+}
+
+header .logo-container {
+    background-color: black;
+    padding: 24px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+header .text-container h1 {
+    font-size: 34px;
+    color: var(--dark-grey);
+}
+
+header .text-container p {
+    color: var(--light-grey);
+}
+
+.border {
+    width: 80px;
+    height: 10px;
+    background-color: var(--dark-grey);
+
+    margin: 24px 0;
+}
